@@ -2,7 +2,7 @@ from datetime import datetime
 from utils import json_handler
 
 
-STR_FORMATACAO = '%d/%m/%y %H:%M:%S'
+STR_FORMATACAO = '%d/%m/%Y %H:%M:%S'
 
 def calculate_tab(list: list[dict]):
     items_list = json_handler.read_json('menu.json')
