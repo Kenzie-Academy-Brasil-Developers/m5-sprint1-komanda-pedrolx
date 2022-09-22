@@ -5,7 +5,6 @@ def read_json(path: str):
     with open(path, 'r', encoding='utf8') as file:
         items = json.load(file)
     if len(items) != 0:
-        print(len(items))
         return items
     return []
 
