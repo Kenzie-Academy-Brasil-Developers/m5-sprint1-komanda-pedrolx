@@ -2,11 +2,14 @@ import json
 
 
 def read_json(path: str):
-    with open(path, 'r', encoding='utf8') as file:
-        items = json.load(file)
-    if len(items) != 0:
-        return items
-    return []
+    try:
+        with open(path, 'r', encoding='utf8') as file:
+            items = json.load(file)
+        if len(items) != 0:
+            return items
+        return []
+    except:
+        return []
 
 
 def write_json(path: str, item: dict):
