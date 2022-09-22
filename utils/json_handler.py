@@ -17,7 +17,7 @@ def write_json(path: str, item: dict):
     with open(path, 'w', encoding='utf8') as file:
         if len(items_list) == 0:
             new_item = {
-                "id": 1,
+                'id': 1,
                 'name': item['name'],
                 'price': item['price'],
             }
@@ -37,7 +37,7 @@ def write_json(path: str, item: dict):
                     ]
                     generated_id = max(tuple(ids))
                     new_item = {
-                        "id": generated_id + 1,
+                        'id': generated_id + 1,
                         'name': item['name'],
                         'price': item['price'],
                     }
@@ -53,7 +53,7 @@ def write_json(path: str, item: dict):
                     ]
                 generated_id = max(tuple(ids))
                 new_item = {
-                "id": generated_id + 1,
+                'id': generated_id + 1,
                 'name': item['name'],
                 'price': item['price'],
             }
