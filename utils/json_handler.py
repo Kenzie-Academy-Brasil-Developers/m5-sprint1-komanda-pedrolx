@@ -23,7 +23,7 @@ def write_json(path: str, item: dict):
             }
             items_list.append(new_item)
             json.dump(items_list, file, indent=2)
-            return item
+            return new_item
         else:
             found = [
                 items_in_list for items_in_list in items_list 
